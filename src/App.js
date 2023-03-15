@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import 'react-library-leo-vergara/dist/index.css';
+import { Button, ButtonStyle } from 'react-library-leo-vergara';
 
 function App() {
   return (
@@ -17,6 +19,9 @@ function App() {
         >
           Learn React
         </a>
+        <Button label="Hola mundo" onClick={() => console.log("Hola mundo")}/>
+        <br></br>
+        <ButtonStyle label="Hola mundo" backgroundColor={'black'}/>
       </header>
     </div>
   );
